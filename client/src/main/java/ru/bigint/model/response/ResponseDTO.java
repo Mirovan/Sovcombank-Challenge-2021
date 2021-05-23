@@ -1,49 +1,43 @@
 package ru.bigint.model.response;
 
 public class ResponseDTO {
-    private Integer id;
-    private Integer digAllowed;
-    private Integer digUsed;
+    private Integer code;
+    private String name;
+    private String phone;
 
     public ResponseDTO() {
     }
 
-    public ResponseDTO(Integer id, Integer digAllowed, Integer digUsed) {
-        this.id = id;
-        this.digAllowed = digAllowed;
-        this.digUsed = digUsed;
+    public Integer getCode() {
+        return code;
     }
 
-    public Integer getId() {
-        return id;
+    public void setCode(Integer code) {
+        this.code = code;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public String getName() {
+        return name;
     }
 
-    public Integer getDigAllowed() {
-        return digAllowed;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setDigAllowed(Integer digAllowed) {
-        this.digAllowed = digAllowed;
+    public String getPhone() {
+        return phone;
     }
 
-    public Integer getDigUsed() {
-        return digUsed;
-    }
-
-    public void setDigUsed(Integer digUsed) {
-        this.digUsed = digUsed;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     @Override
     public String toString() {
-        return "License{" +
-                "id=" + id +
-                ", digAllowed=" + digAllowed +
-                ", digUsed=" + digUsed +
+        return "ResponseDTO{" +
+                "code=" + code +
+                ", name='" + name + '\'' +
+                ", phone='" + phone + '\'' +
                 '}';
     }
 }
